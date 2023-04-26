@@ -1,0 +1,319 @@
+body{overflow-x: hidden;}
+#nav{
+position: absolute;
+
+background-color: #1D809F;
+width: 16rem;
+height: 100vh;
+color:white;
+right:-260px;
+transition: all 0.40s ease 0s;
+
+
+}
+
+#nav ul{padding: 0;}
+#nav ul li {
+list-style-type: none;
+padding: 15px;
+}
+
+#nav ul li:nth-of-type(1){
+padding-block: 1.5rem;
+padding-left: 1rem;
+font-size: larger;
+background-color:rgba(73, 72, 72, 0.205) ;
+}
+
+#nav[data-click="false"]{
+transform: translate(-250px);
+
+}
+
+
+
+.nav-btn{
+position: absolute;
+right: 20px;
+margin-top: 14px;
+font-size: larger;
+font-weight: 600;
+height: 50px;
+width: 53px;
+background-color: #09171c61;
+color: white;
+z-index: 900;
+}
+.nav-btn:hover{background-color: #09171c94;color:white}
+
+
+
+
+/*__________________ secitons  ___________________*/
+#sec-1{
+height: 69vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-image: url("../img/bg-masthead.jpg");
+background-size: cover;
+}
+
+#sec-1 p:nth-child(1){
+font-size: 60px;
+font-weight: 700;
+line-height: 1;
+width: 90%;
+}
+
+#sec-1 p:nth-child(2){
+font-size: 25px;
+font-style: italic;
+font-weight: 600;
+text-align: center;
+width: 90%;
+}
+
+
+@media (max-width: 768px) {
+
+#sec-1 p:nth-of-type(2){font-size: 22px;line-height: 1.25;font-weight: 600;color:rgb(255, 12, 12) !important}
+
+}
+
+
+@media (max-width: 576px) {
+
+#sec-1 p:nth-of-type(1){font-size: 50px;line-height: 1.25;}
+#sec-1 p:nth-of-type(2){font-size: 22px;line-height: 1.25;font-weight: 600;color:white}
+}
+
+
+#sec-1 .btn{
+background-color:#1D809F ;
+color: white;
+padding: 20px;
+padding-inline: 30px;
+}
+
+
+#sec-2{
+height: 69vh;
+}
+
+#sec-2 p:nth-of-type(1){
+font-size: 28px;
+font-weight: 700;
+width: 95%;
+text-align: center;
+line-height: 1.40;
+}
+
+@media (max-width: 768px) {
+
+#sec-2 p:nth-of-type(1){width:90%;font-size: 25px;}
+
+}
+@media (max-width: 576px) {
+
+#sec-2 p:nth-of-type(1){width:90%;font-size: 20px;}
+
+}
+
+
+#sec-2 p:nth-of-type(2) ,   #sec-2 p:nth-of-type(2) a{
+color: rgba(0, 0, 0, 0.509);
+
+font-size: 20px;
+color: rgba(0, 0, 0, 0.509);
+width: 70%;
+text-align: center;
+line-height: 1.40;
+}
+#sec-2 .btn{
+background-color: #212529;
+color:white;
+padding: 20px;
+margin-top:2.25rem;
+padding-inline: 30px;
+}
+
+
+/*_______________________________ section 3 __________________________*/
+
+#sec-3{
+display: flex;
+flex-direction: column;
+text-align: center;
+padding-top: 5rem;
+background-color:#1D809F ;
+}
+
+/* SERVICES */
+#sec-3 p:nth-of-type(1){
+color:#ECB81B;
+font-weight: 700;
+font-size:14px;
+
+}
+/* whate we offer */
+#sec-3 p:nth-of-type(2){
+color:white;
+font-weight: 700;
+line-height: 0.75;
+font-size:45px;
+margin-bottom:45px;
+}
+
+/* col */
+#sec-3 div[class*="col"]{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+#sec-3 div[class*="col"] i{
+color:#1D809F;
+font-size: xx-large;
+}
+
+
+#sec-3 div[class*="col"] .cir{
+display: flex;
+justify-content: center;
+align-items: center;
+background-color:white;
+width: 110px;
+height: 110px;
+border-radius: 50%;
+}
+
+#sec-3 div[class*="col"] p:nth-of-type(1){
+color:white;
+font-size: 25px;
+margin-top: 15px;
+line-height: 0.25;  
+}
+#sec-3 div[class*="col"] p:nth-of-type(2){
+color:#BCD9DA;
+font-weight: 500;
+font-size: 14px;
+margin-top: 0.5rem;
+}
+
+/* section 4  */
+#sec-4{
+padding-top: 101px;
+display: flex;
+flex-direction: column;
+text-align: center;
+align-items: center;
+background-image: url(../img/bg-callout.jpg);
+background-size: cover;
+height: 100vh;
+
+}
+
+#sec-4 p:nth-of-type(1){
+font-size: 3rem;
+font-weight: 700;
+font-style: italic;
+width: 30%;
+}
+
+#sec-4 .btn{
+
+color:white;
+padding: 20px;
+margin-top:2.25rem;
+padding-inline: 30px;
+background-color: #1D809F;
+}
+
+/* section 5  */
+
+#sec-5{
+display: flex;
+flex-direction: column;
+text-align: center;
+padding-top: 5rem;
+
+}
+
+/* SERVICES */
+#sec-5 p:nth-child(1){
+color:#ECB81B;
+font-weight: 700;
+font-size:14px;
+
+}
+/* whate we offer */
+#sec-5 > div > p:nth-child(2){
+font-weight: 700;
+line-height: 0.75;
+font-size:45px;
+margin-bottom:45px;
+}
+/* 
+
+
+
+/* col */
+#sec-5 div[class*="col"]:nth-of-type(1){
+height: 408px;
+position: relative;
+
+}
+
+/* con */
+#sec-5 div[class*="col"]:nth-of-type(1) .con{
+display: flex;
+flex-direction: column;
+
+justify-content: end;
+
+position: absolute;
+background-image: url(../img/portfolio-1.jpg);
+width: 100%;
+height: 100%;
+clip-path: inset(-1px);
+transition: all 0.25s ease-out;
+
+
+}
+
+
+
+#sec-5 div[class*="col"]:nth-of-type(1) .con p:nth-of-type(1) {
+ color: white;
+ font-weight: 600;
+ font-size: 13px;
+ font-family:sans-serif;
+ text-transform: uppercase;
+width: 140px;
+
+margin: 0;
+text-align: left;
+left: 0%;
+
+transform: translateX(95%)translateY(-150%);
+}
+
+#sec-5 div[class*="col"]:nth-of-type(1) .con p:nth-of-type(2){
+    width: 440px;
+    color: white;
+    font-size: 19px;
+    text-align: left;
+    left: 0%;
+    transform: translateX(30%)translateY(-40%);
+
+}
+
+
+
+#sec-5 div[class*="col"]:nth-of-type(1):hover .con{
+clip-path: inset(2rem);
+
+}
