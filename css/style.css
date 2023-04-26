@@ -260,60 +260,92 @@ margin-bottom:45px;
 
 
 
-/* col */
-#sec-5 div[class*="col"]:nth-of-type(1){
+
+/* img-cover */
+#sec-5 div[class*="col"] .img-cover{
 height: 408px;
-position: relative;
-
-}
-
-/* con */
-#sec-5 div[class*="col"]:nth-of-type(1) .con{
 display: flex;
 flex-direction: column;
-
 justify-content: end;
-
-position: absolute;
-background-image: url(../img/portfolio-1.jpg);
-width: 100%;
-height: 100%;
 clip-path: inset(-1px);
 transition: all 0.25s ease-out;
-
-
 }
 
+#sec-5 div[class*="col"]:nth-of-type(1) .img-cover{background-image: url(../img/portfolio-1.jpg)}
+#sec-5 div[class*="col"]:nth-of-type(2) .img-cover{background-image: url(../img/portfolio-2.jpg)}
+#sec-5 div[class*="col"]:nth-of-type(3) .img-cover{background-image: url(../img/portfolio-3.jpg)}
+#sec-5 div[class*="col"]:nth-of-type(4) .img-cover{background-image: url(../img/portfolio-4.jpg)}
 
 
-#sec-5 div[class*="col"]:nth-of-type(1) .con p:nth-of-type(1) {
- color: white;
- font-weight: 600;
- font-size: 13px;
- font-family:sans-serif;
- text-transform: uppercase;
-width: 140px;
 
-margin: 0;
+
+#sec-5 div[class*="col"]:hover .img-cover{clip-path: inset(2rem);}
+
+
+#sec-5 div[class*="col"] .img-cover .con-p {
 text-align: left;
-left: 0%;
-
-transform: translateX(95%)translateY(-150%);
+color: white;
+font-size: 13px;
+margin-bottom: 10%;
+margin-left: 10%;
 }
 
-#sec-5 div[class*="col"]:nth-of-type(1) .con p:nth-of-type(2){
-    width: 440px;
+#sec-5 .img-cover .con-p *{color: white; width:70%;}
+#sec-5 .img-cover .con-p p:nth-of-type(1){font-size: medium;}
+#sec-5 .img-cover .con-p p:nth-of-type(2){font-size: medium;font-family: sans-serif;}
+
+
+/* section 6  */
+#sec-6{
+    height: 50vh;
+    background-color: #1D809F;
+}
+#sec-6 p:nth-of-type(1){
     color: white;
-    font-size: 19px;
-    text-align: left;
-    left: 0%;
-    transform: translateX(30%)translateY(-40%);
+    font-size: 2rem;
+}
 
+#sec-6 button:nth-of-type(1){
+    margin-right: 20px;
+    padding-inline: 40px;
+    padding-block: 20px;
+}
+
+#sec-6 button:nth-of-type(2){
+ background-color: #212529;
+ color: white;
+ padding-inline: 40px;
+ padding-block: 20px;   
 }
 
 
 
-#sec-5 div[class*="col"]:nth-of-type(1):hover .con{
-clip-path: inset(2rem);
 
+/* map */
+.map iframe{
+ 
+    width: 100%;
+    height: 70vh;
+}
+
+/* map */
+.map iframe small{
+ display: none;
+}
+
+
+
+
+/* #sec-7 */
+#sec-7 .social-btns *{
+    color: white;
+background-color: #1D809F;
+}
+
+
+
+/* #sec-8 */
+#sec-8 *{
+    font-size: small;
+    color: rgb(131, 131, 131) !important;
 }

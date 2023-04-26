@@ -1,13 +1,13 @@
 const btnnav = document.querySelector(".nav-btn")
 btnnav.addEventListener("click",() => {
 const nav = document.querySelector("#nav")
-    if(nav.getAttribute("data-click") === "true"){
-        nav.setAttribute("data-click","false")
-        btnnav.innerHTML = "x"
-    }else{
-        btnnav.innerHTML = "≣"
-        nav.setAttribute("data-click","true")
-    }
+if(nav.getAttribute("data-click") === "true"){
+nav.setAttribute("data-click","false")
+btnnav.innerHTML = "x"
+}else{
+btnnav.innerHTML = "≣"
+nav.setAttribute("data-click","true")
+}
 
 }
 
@@ -26,8 +26,13 @@ console.log("Horizontally: " + x + " Vertically: " + y)
 
 
 window.onload(gop())
-window.scroll(gop())
+
 
 function gop(){
-    window.scrollTo({ top: 410, left: 0, behavior: 'smooth' });
+    window.location.href = "#sec-6"
+    // const secfive =  document.getElementById("sec-5")
+    // secfive.scrollIntoView();
+
 }
+
+
